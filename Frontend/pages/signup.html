@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Farmer Connect</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+
+  <main class="login-container">
+    <form id="signup-form" class="login-form" novalidate>
+
+      <h1>Create Account</h1>
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="name"
+          required
+        >
+        <span class="error-message" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          required
+        >
+        <span class="error-message" id="email-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          autocomplete="new-password"
+          required
+        >
+        <span class="error-message" id="password-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          autocomplete="new-password"
+          required
+        >
+        <span class="error-message" id="confirm-password-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="role">Role: Farmer / Consumer</label>
+        <select id="role" name="role" required>
+          <option value="" disabled selected>Select your role</option>
+          <option value="farmer">Farmer</option>
+          <option value="consumer">Consumer</option>
+        </select>
+        <span class="error-message" id="role-error"></span>
+      </div>
+
+      <span class="error-message" id="form-error"></span>
+
+      <button type="submit" id="signup-button" class="btn-primary">
+        Sign Up
+      </button>
+
+      <p class="signup-link">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+
+    </form>
+  </main>
+
+  <script src="../js/signup.js"></script>
+</body>
+</html>
